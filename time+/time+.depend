@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1524970437 source:d:\c++\time+\client.cpp
+	<iostream>
+	"time.h"
+
+1524970820 d:\c++\time+\time.h
+
+1524970806 source:d:\c++\time+\time.cpp
+	<iostream>
+	"time.h"
+
