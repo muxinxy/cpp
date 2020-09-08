@@ -1,35 +1,32 @@
-#include <iostream>
+#include<iostream>
+#include<cmath>
 using namespace std;
-class Complex{
-public:
-Complex( ){real=0;imag=0;}
-Complex(double r,double i){real=r;imag=i;}
-friend Complex operator ++ ( Complex & , int );
-void display( );
-private:
-double real;
-double imag;
-};
-Complex operator ++ (Complex & c, int )
-{
-Complex temp(c);
-c.real ++;
-c.imag ++;
-return temp;
-}
-void Complex::display( )
-{
-cout<<"( "<<real<<","<<imag<<"i )"<<endl;
-}
-int main( )
-{
-Complex c1(3 , 4),c2;
-cout<<"c1: ";
-c1.display( );
-c2=c1++; //or c2=operator++(c1, 0);
-cout<< "c1 ++ : ";
-c1.display( );
-cout<<"c2: ";
-c2.display( );
+int main(){
+double pi=3.1415;
+const double p=981,g=9.795,n=0.0000183,l=0.0015,b=0.00000617,P=76,d=0.005,e=1.60e-19;
+double t,u;
+double q,a,m,E,j,qSum=0,ESum=0;
+int i;
+//cout<<"U=";
+//cin>>u;
+for(int k=0;k<5 ;k++){
+//cout<<"t=";
+//cin>>t;
+//a=sqrt(9*n*l/(2*p*g*t));
+//m=(n*l)/((1+(b/P/a))*t);
+//q=(18*pi)/sqrt(2*p*g)*sqrt(m*m*m)*(d/u);
+//cout<<"q="<<q<<endl;
+//qSum+=q;}
+cin>>qSum;
+//qSum=qSum/3;
+j=qSum/e;i=j;
+if((j-i)>=0.5) i=i+1;
+else i=i;
+E=qSum/i;
+ESum+=E;}
+
+//cout<<qSum;
+cout<<ESum/5;
+//<<endl<<i<<'\t'<<j<<endl<<E<<endl<<endl;
 return 0;
 }
