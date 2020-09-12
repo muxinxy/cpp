@@ -2,12 +2,13 @@
 
 using namespace std;
 
+int apple[1001][1001];
+
 int main()
 {
     int i,j,N,M,temp_T;
     int T=0,D=0,E=0;
     int drop[1001];
-    int apple[1001][1001];
     cin >> N;
     for(i=0;i<N;i++){
         cin >> M;
@@ -26,6 +27,16 @@ int main()
                 D++;
                 drop[i]=1;
             }
+        }
+        j=apple[i][0];
+        temp_T=apple[i][j];
+        for(j=apple[i][0]-1;j>=1 && temp_T<=0;j--){
+            if(apple[i][j]>0){
+                temp_T+=apple[i][j];
+                break;
+            }
+            else
+                temp_T+=apple[i][j];
         }
         T+=temp_T;
     }
