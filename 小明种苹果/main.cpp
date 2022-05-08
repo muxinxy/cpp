@@ -24,10 +24,6 @@ int main()
         if(temp_P<P){
             P=temp_P;
             k=i+1;
-        }else if(temp_P==P){
-            if(k>i+1){
-                k=i+1;
-            }
         }
     }
     P=-P;
